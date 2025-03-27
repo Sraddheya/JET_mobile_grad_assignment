@@ -1,0 +1,31 @@
+package com.example.jet_mobile_grad_assignment
+
+data class Restaurant(
+    val address: Address,
+//    val availability: Availability,
+    val cuisines: List<Cuisine>,
+//    val deals: List<Deal>,
+//    val defaultDisplayRank: Int,
+//    val deliveryCost: Double,
+//    val deliveryEtaMinutes: DeliveryEtaMinutes,
+//    val deliveryOpeningTimeLocal: String,
+//    val driveDistanceMeters: Int,
+    val id: String,
+//    val isCollection: Boolean,
+//    val isDelivery: Boolean,
+//    val isNew: Boolean,
+//    val isOpenNowForCollection: Boolean,
+//    val isOpenNowForDelivery: Boolean,
+//    val isOpenNowForPreorder: Boolean,
+//    val isPremier: Boolean,
+//    val isTemporarilyOffline: Boolean,
+//    val isTemporaryBoost: Boolean,
+//    val isTestRestaurant: Boolean,
+//    val logoUrl: String,
+//    val minimumDeliveryValue: Double,
+    val name: String,
+//    val openingTimeLocal: String,
+    val rating: Rating,
+//    val tags: List<String>,
+    val uniqueName: String
+)
