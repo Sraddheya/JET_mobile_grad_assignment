@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--    JET brand colours taken from: https://brand-box.marketing.just-eat.com/-->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FF8000</color>
+    <color name="red">#F75E28</color>
+    <color name="yellow">#F6C243</color>
+    <color name="purple">#5B3D5B</color>
+    <color name="blue">#C1DADE</color>
+    <color name="pink">#F2A6B0</color>
+    <color name="charcoal">#242E30</color>
+    <color name="mozzarella">#EFEDEA</color>
 </resources>
