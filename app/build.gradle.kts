@@ -64,4 +64,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
 
+    //RecyclerView
+    implementation("androidx.recyclerview:recyclerview:1.4.0")
+
 }

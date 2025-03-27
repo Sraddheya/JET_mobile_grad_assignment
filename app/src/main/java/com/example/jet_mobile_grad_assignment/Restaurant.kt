@@ -1,16 +1,16 @@
 package com.example.jet_mobile_grad_assignment
 
 data class Restaurant(
-    val address: Address,
+//    val address: Address,
 //    val availability: Availability,
-    val cuisines: List<Cuisine>,
+//    val cuisines: List<Cuisine>,
 //    val deals: List<Deal>,
 //    val defaultDisplayRank: Int,
 //    val deliveryCost: Double,
 //    val deliveryEtaMinutes: DeliveryEtaMinutes,
 //    val deliveryOpeningTimeLocal: String,
 //    val driveDistanceMeters: Int,
-    val id: String,
+//    val id: String,
 //    val isCollection: Boolean,
 //    val isDelivery: Boolean,
 //    val isNew: Boolean,
@@ -25,7 +25,7 @@ data class Restaurant(
 //    val minimumDeliveryValue: Double,
     val name: String,
 //    val openingTimeLocal: String,
-    val rating: Rating,
+//    val rating: Rating,
 //    val tags: List<String>,
-    val uniqueName: String
+//    val uniqueName: String
 )
