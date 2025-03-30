@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 
 import com.example.jet_mobile_grad_assignment.R
 import com.example.jet_mobile_grad_assignment.RestaurantViewModel
@@ -21,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var restaurantAdapter: RestaurantAdapter
 
     // ViewModel to handle the restaurant data
-    private val restaurantViewModel: RestaurantViewModel by viewModels()
+    private lateinit var restaurantViewModel: RestaurantViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Method to get the restaurant data via the ViewModel
+        restaurantViewModel = ViewModelProvider(this)[RestaurantViewModel::class.java]
         restaurantViewModel.getRestaurants()
 
         // Observe the restaurant data
