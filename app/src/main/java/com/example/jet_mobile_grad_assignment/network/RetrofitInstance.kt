@@ -1,4 +1,4 @@
-package com.example.jet_mobile_grad_assignment
+package com.example.jet_mobile_grad_assignment.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -1,4 +1,4 @@
-package com.example.jet_mobile_grad_assignment
+package com.example.jet_mobile_grad_assignment.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,6 +6,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.example.jet_mobile_grad_assignment.R
 import com.example.jet_mobile_grad_assignment.databinding.ItemRestaurantBinding
 import com.example.jet_mobile_grad_assignment.data.models.Restaurant
 
