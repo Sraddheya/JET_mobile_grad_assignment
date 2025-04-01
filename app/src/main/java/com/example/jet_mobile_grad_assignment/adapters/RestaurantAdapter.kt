@@ -50,7 +50,7 @@ class RestaurantAdapter : RecyclerView.Adapter<RestaurantAdapter.RestaurantViewH
 
     // Returns the number of items in the list
     override fun getItemCount(): Int {
-        return differ.currentList.size
+        return if (differ.currentList.size < 10) differ.currentList.size else 10
     }
 
     // Submits a new list to the adapter (for difUtil to calculate the difference)
