@@ -10,7 +10,7 @@ import android.view.LayoutInflater
 import android.widget.TextView
 import com.example.jet_mobile_grad_assignment.R
 
-class RestaurantAdapter (var restaurants: List<Restaurant>) : RecyclerView.Adapter<RestaurantAdapter.RestaurantViewHolder>(){
+class RestaurantAdapter : RecyclerView.Adapter<RestaurantAdapter.RestaurantViewHolder>(){
 
     // ViewHolder class to hold the data to be displayed in the RecyclerView
     inner class RestaurantViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
