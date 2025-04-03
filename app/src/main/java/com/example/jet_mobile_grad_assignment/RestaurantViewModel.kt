@@ -8,14 +8,18 @@ import androidx.lifecycle.viewModelScope
 import com.example.jet_mobile_grad_assignment.data.models.Restaurant
 import com.example.jet_mobile_grad_assignment.network.RetrofitInstance
 import com.example.jet_mobile_grad_assignment.ui.TAG
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 import java.io.IOException
 
 class RestaurantViewModel(private val repository: RestaurantRepository) : ViewModel() {
 
-    // MutableLiveData to hold the values the MainActivity will observe
-    private val privateRestaurants = MutableLiveData<List<Restaurant>>()
+    private val _restaurants = MutableStateFlow<List<Restaurant>>(emptyList())
+    val restaurants: StateFlow<List<Restaurant>> = _restaurants.asStateFlow()
+
     private val privateError = MutableLiveData<String>()
 
     // Coroutine to get the restaurant data from the api
@@ -25,7 +29,7 @@ class RestaurantViewModel(private val repository: RestaurantRepository) : ViewMo
                 // Making the API call
                 val result = repository.getRestaurantsByPostcode(postcode)
                 if (result.isSuccessful) {
-                    privateRestaurants.value = result.body()!!.restaurants
+                    _restaurants.value = (result.body()?.restaurants?.take(10) ?: emptyList())
                 } else {
                     privateError.value = "Error: ${result.errorBody().toString()}"
                 }
@@ -37,16 +41,6 @@ class RestaurantViewModel(private val repository: RestaurantRepository) : ViewMo
                 privateError.postValue("Unexpected Error: ${e.message}")
             }
         }
-    }
-
-    // Public methods to expose the restaurant data to the MainActivity
-    fun observeRestaurants(): LiveData<List<Restaurant>> {
-        return privateRestaurants
-    }
-
-    // Public method to expose the error data to the MainActivity
-    fun observeError(): LiveData<String> {
-        return privateError
     }
 
 }

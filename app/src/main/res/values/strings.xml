@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">JET_mobile_grad_assignment</string>
+    <string name="title_activity_compose">ComposeActivity</string>
+    <!--    <string name="title_activity_compose">ComposeActivity</string>-->
 </resources>
