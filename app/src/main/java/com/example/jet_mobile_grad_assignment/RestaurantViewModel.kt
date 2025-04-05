@@ -1,13 +1,12 @@
 package com.example.jet_mobile_grad_assignment
 
-import android.util.Log
-import androidx.lifecycle.LiveData
+//import android.util.Log
+//import androidx.lifecycle.LiveData
+//import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.jet_mobile_grad_assignment.data.models.Restaurant
-import com.example.jet_mobile_grad_assignment.network.RetrofitInstance
-import com.example.jet_mobile_grad_assignment.ui.TAG
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
