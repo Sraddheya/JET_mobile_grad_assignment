@@ -3,8 +3,12 @@ package com.example.jet_mobile_grad_assignment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 
+/*
+ * The RestaurantViewModelFactory is a factory class for creating instances of RestaurantViewModel.
+ */
 class RestaurantViewModelFactory(private val restaurantRepository: RestaurantRepository) : ViewModelProvider.Factory {
 
+    // Creates an instance of RestaurantViewModel
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(RestaurantViewModel::class.java)) {
             @Suppress("UNCHECKED_CAST")

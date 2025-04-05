@@ -4,12 +4,13 @@ import com.example.jet_mobile_grad_assignment.data.models.RestaurantResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
-import retrofit2.http.Query
 
+/**
+ * The RestaurantAPI interface defines the API endpoints and their request methods.
+ */
 interface RestaurantAPI {
 
-    //https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/EH39JJ
-
+    // GET request to get data from the API using a postcode
     @GET("discovery/uk/restaurants/enriched/bypostcode/{postcode}")
     suspend fun getRestaurantResponse(
         @Path("postcode") postcode: String
