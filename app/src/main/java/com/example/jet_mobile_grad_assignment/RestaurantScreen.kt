@@ -1,6 +1,7 @@
 package com.example.jet_mobile_grad_assignment
 
 import android.util.Log
+import android.widget.Toast
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -9,6 +10,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Button
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -16,12 +18,22 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.unit.dp
 import com.example.jet_mobile_grad_assignment.data.models.Restaurant
 import androidx.compose.runtime.collectAsState
+import androidx.compose.ui.platform.LocalContext
 import com.example.jet_mobile_grad_assignment.util.Constants.Companion.TAG
 
 @Composable
 fun RestaurantScreen(viewModel: RestaurantViewModel) {
     var postcode by remember { mutableStateOf("") }
     val restaurantList by viewModel.restaurants.collectAsState(initial = emptyList())
+    val error by viewModel.error.collectAsState(initial = null)
+    val context = LocalContext.current
+
+    LaunchedEffect(error) {
+        error?.let { message ->
+            Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
+            viewModel.clearError()
+        }
+    }
 
     Column(
         modifier = Modifier
@@ -56,12 +68,9 @@ fun RestaurantScreen(viewModel: RestaurantViewModel) {
                 Log.d(TAG, restaurant.name)
                 RestaurantItem(restaurant)
             }
-
         }
-
     }
 }
-
 
 @Composable
 fun RestaurantItem(restaurant: Restaurant) {
