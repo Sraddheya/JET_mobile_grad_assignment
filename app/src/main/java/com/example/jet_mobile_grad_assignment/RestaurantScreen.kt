@@ -16,8 +16,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.unit.dp
 import com.example.jet_mobile_grad_assignment.data.models.Restaurant
 import androidx.compose.runtime.collectAsState
-
-const val TAG = "RESPONSE_LOG"
+import com.example.jet_mobile_grad_assignment.util.Constants.Companion.TAG
 
 @Composable
 fun RestaurantScreen(viewModel: RestaurantViewModel) {
