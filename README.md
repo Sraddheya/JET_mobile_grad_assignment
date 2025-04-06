@@ -4,13 +4,13 @@ Coding assignment for the JET Mobile Graduate Scheme 2025
 
 ## Screenshot Example
 
-![Mobile app screenshot](https://github.com/sraddheya/JET_mobile_grad_assignment/app_screenshot.png)
+![Mobile app screenshot](https://github.com/sraddheya/JET_mobile_grad_assignment/blob/main/app_screenshot.png)
 
 ## How to Build, Compile, and Run The Program
 
 1. Install Android Studio. Instructions can be found using the page [Install Android Studio](https://developer.android.com/studio/install).
 2. Clone the repo and open it in Android Studio.
-3. Go to the top bar of Android studio and select and create an emulator or pair a device to run the app on. The app should be able to run on Android 10 and above. Instructions can be found on the page [Build and run your app](https://developer.android.com/studio/run)
+3. Go to the top bar of Android studio and create an emulator or pair a device to run the app on. The app should be able to run on Android 10 and above. Instructions can be found on the page [Build and run your app](https://developer.android.com/studio/run)
 4. Go to the top bar of Android Studio and click the green 'Run' button to run the app. Input the postcode as requested.
 
 ## Assumptions
@@ -23,7 +23,8 @@ Coding assignment for the JET Mobile Graduate Scheme 2025
 ## Improvements
 
 - Improve the design of how the restaurant data is displayed to the user.
-- Add a loading spinner when the app is fetching data form the API.
+- Add a loading spinner when the app is fetching data from the API.
 - Include testing, particularly for the exceptions/edge cases.
 - Hide keyboard when the user is not typing.
 - Allow the user to search by hitting enter on the keyboard.
+- Make the toast when there is an error more obvious.
