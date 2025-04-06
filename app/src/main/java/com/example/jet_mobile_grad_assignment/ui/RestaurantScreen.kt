@@ -19,7 +19,6 @@ import androidx.compose.ui.unit.dp
 import com.example.jet_mobile_grad_assignment.data.models.Restaurant
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.platform.LocalContext
-import com.example.jet_mobile_grad_assignment.ui.RestaurantViewModel
 import com.example.jet_mobile_grad_assignment.util.Constants.Companion.TAG
 
 @Composable
@@ -32,7 +31,7 @@ fun RestaurantScreen(viewModel: RestaurantViewModel) {
     LaunchedEffect(error) {
         error?.let { message ->
             Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
-            viewModel.clearError()
+            viewModel.clearStateFlows()
         }
     }
 

@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.jet_mobile_grad_assignment.repository.RestaurantRepository
 
 /*
- * The RestaurantViewModelFactory is a factory class for creating instances of RestaurantViewModel.
+ * Responsible for creating instances of RestaurantViewModel.
  */
 class RestaurantViewModelFactory(private val restaurantRepository: RestaurantRepository) : ViewModelProvider.Factory {
 

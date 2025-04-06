@@ -5,8 +5,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 /**
- * The RetrofitInstance object creates a singleton instance of Retrofit and provides
- * access to the RestaurantAPI interface.
+ * Responsible for creating a singleton instance of Retrofit and providing access to
+ * the RestaurantAPI interface.
  */
 object RetrofitInstance {
 

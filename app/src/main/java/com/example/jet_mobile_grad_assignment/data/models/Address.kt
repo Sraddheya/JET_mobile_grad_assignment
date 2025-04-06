@@ -1,12 +1,15 @@
 package com.example.jet_mobile_grad_assignment.data.models
 
+/**
+ * Data class representing the address of a restaurant.
+ *
+ * Note that some fields, though present in the API response, are not used in the app and
+ * are therefore not included.
+ */
 data class Address(
     val city: String,
     val firstLine: String,
     val postalCode: String
-
-// Other fields are commented out because they are not used
-//  val location: Location,
 )
 
     // Clearer string representation of an Address object

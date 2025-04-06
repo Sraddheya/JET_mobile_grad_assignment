@@ -6,13 +6,13 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 /**
- * The RestaurantAPI interface defines the API endpoints and their request methods.
+ * Responsible for the API endpoints and their request methods.
  */
 interface RestaurantAPI {
 
-    // GET request to get data from the API using a postcode
+    // GET request to get data from the API by passing in a postcode
     @GET("discovery/uk/restaurants/enriched/bypostcode/{postcode}")
-    suspend fun getRestaurantResponse(
+    suspend fun getRestaurantResponseByPostcode(
         @Path("postcode") postcode: String
     ): Response<RestaurantResponse>
 

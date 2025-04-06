@@ -9,8 +9,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.example.jet_mobile_grad_assignment.repository.RestaurantRepository
-import com.example.jet_mobile_grad_assignment.ui.RestaurantViewModel
-import com.example.jet_mobile_grad_assignment.ui.RestaurantViewModelFactory
 import com.example.jet_mobile_grad_assignment.ui.theme.JET_mobile_grad_assignmentTheme
 
 class ComposeActivity : ComponentActivity() {
@@ -30,6 +28,7 @@ class ComposeActivity : ComponentActivity() {
                 Surface(
                     modifier = Modifier.Companion.fillMaxSize()
                 ) {
+                    // Set the content of the activity to the RestaurantScreen
                     RestaurantScreen(viewModel)
                 }
             }
