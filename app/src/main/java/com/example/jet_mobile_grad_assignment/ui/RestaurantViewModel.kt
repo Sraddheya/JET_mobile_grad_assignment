@@ -1,8 +1,8 @@
-package com.example.jet_mobile_grad_assignment
+package com.example.jet_mobile_grad_assignment.ui
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.jet_mobile_grad_assignment.repository.RestaurantRepository
 import com.example.jet_mobile_grad_assignment.data.models.Restaurant
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -10,7 +10,6 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 import java.io.IOException
-import com.example.jet_mobile_grad_assignment.util.Constants.Companion.TAG
 
 class RestaurantViewModel(private val repository: RestaurantRepository) : ViewModel() {
 

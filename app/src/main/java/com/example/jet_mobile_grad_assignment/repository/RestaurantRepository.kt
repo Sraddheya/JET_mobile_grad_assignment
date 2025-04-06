@@ -1,7 +1,7 @@
-package com.example.jet_mobile_grad_assignment
+package com.example.jet_mobile_grad_assignment.repository
 
+import com.example.jet_mobile_grad_assignment.api.RetrofitInstance
 import com.example.jet_mobile_grad_assignment.data.models.RestaurantResponse
-import com.example.jet_mobile_grad_assignment.network.RetrofitInstance
 import retrofit2.Response
 
 /**

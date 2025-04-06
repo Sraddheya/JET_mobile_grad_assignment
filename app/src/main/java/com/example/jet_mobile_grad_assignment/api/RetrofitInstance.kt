@@ -1,4 +1,4 @@
-package com.example.jet_mobile_grad_assignment.network
+package com.example.jet_mobile_grad_assignment.api
 
 import com.example.jet_mobile_grad_assignment.util.Constants.Companion.BASE_URL
 import retrofit2.Retrofit

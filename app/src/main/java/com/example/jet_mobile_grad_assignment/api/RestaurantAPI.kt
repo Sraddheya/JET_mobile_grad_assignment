@@ -1,4 +1,4 @@
-package com.example.jet_mobile_grad_assignment.network
+package com.example.jet_mobile_grad_assignment.api
 
 import com.example.jet_mobile_grad_assignment.data.models.RestaurantResponse
 import retrofit2.Response

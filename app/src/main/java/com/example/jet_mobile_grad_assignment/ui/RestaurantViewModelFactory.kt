@@ -1,7 +1,8 @@
-package com.example.jet_mobile_grad_assignment
+package com.example.jet_mobile_grad_assignment.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.example.jet_mobile_grad_assignment.repository.RestaurantRepository
 
 /*
  * The RestaurantViewModelFactory is a factory class for creating instances of RestaurantViewModel.

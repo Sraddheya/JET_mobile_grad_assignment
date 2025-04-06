@@ -1,4 +1,4 @@
-package com.example.jet_mobile_grad_assignment
+package com.example.jet_mobile_grad_assignment.ui
 
 import android.util.Log
 import android.widget.Toast
@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.example.jet_mobile_grad_assignment.data.models.Restaurant
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.platform.LocalContext
+import com.example.jet_mobile_grad_assignment.ui.RestaurantViewModel
 import com.example.jet_mobile_grad_assignment.util.Constants.Companion.TAG
 
 @Composable
