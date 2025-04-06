@@ -4,7 +4,7 @@ Coding assignment for the JET Mobile Graduate Scheme 2025
 
 ## Screenshot Example
 
-![Mobile app screenshot](https://github.com/sraddheya/JET_mobile_grad_assignment/blob/main/app_screenshot.png | width=200)
+<img src="https://github.com/sraddheya/JET_mobile_grad_assignment/blob/main/app_screenshot.png" width="300" alt="Mobile app screenshot">
 
 ## How to Build, Compile, and Run The Program
 
